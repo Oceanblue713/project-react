@@ -1,15 +1,15 @@
 import React from 'react';
+import Hello from './sayHello';
+import Tweet from './Tweet';
+import './App.css'
 
 function App() {
-
-  const sayHello = () => {
-    console.log('hello');
-  }
-
   return(
-    <div>
-      <h1>Hello React</h1>
-      <button onClick={() => sayHello()}>Hello</button>
+    <div className="app">
+      <Tweet name="Emily"/>
+      <Tweet name="Bob"/>
+      <Tweet name="Winter"/>
+      <Tweet name="Dev"/>
     </div>
   );
 }
